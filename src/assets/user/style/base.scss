@@ -1,0 +1,225 @@
+/* color palette from <https://github.com/vuejs/theme> */
+
+/*###########################
+breakpoint
+###########################*/
+$bp-mobile: 800px;
+$bp-tablet: 960px;
+$bp-desktop: 1200px;
+
+/*###########################
+breakpoint
+###########################*/
+$isMobile: 'max-width: '+ $bp-mobile ;
+$isTablet: 'max-width: '+ $bp-tablet ;
+
+:root {
+    --vt-c-indigo: #2c3e50;
+    --vt-c-text-light-1: var(--vt-c-indigo);
+    --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+
+    --pc-width: 1200px;
+    --tablet-width: 960px;
+    --mobile-width: 800px;
+
+    --navi: #0d133a;
+    --mint: #a3f7ff;
+}
+
+/* semantic color variables for this project */
+:root {
+    --color-heading: var(--vt-c-text-light-1);
+    --color-text: var(--vt-c-text-light-1);
+    --section-gap: 160px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    //font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing:-0.04em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    //font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing:-0.04em;
+    color:#363636;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+ul:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr,
+legend,
+caption {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+b{
+    font-weight: 700 !important
+}
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+}
+html,
+body {
+    width: 100%;
+    //font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing:-0.04em;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}

@@ -1,0 +1,519 @@
+.f_blue {
+    color: #86f8ff;
+}
+
+.viewMain {
+    font-family: 'Pretendard';
+    font-size: 10px;
+    @media (max-width: 960px ) {
+        /*font-size: 9px;*/
+    }
+}
+
+.viewMain .main-pd {
+    padding: 0 30px;
+}
+
+.viewMain .sub_pg_wrap {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    color: black;
+    margin: 100px auto;
+
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+.viewMain .sub_pg_wrap .tab_title_wrap {}
+
+.viewMain .sub_pg_wrap .tab_title_wrap .tab_title {
+    font-size: 3rem;
+    font-weight: 600;
+    display: none;
+}
+
+.viewMain .sub_pg_wrap .tab_title_wrap .tab_title.active {
+    display: flex;
+}
+
+.viewMain .sub_pg_wrap .tab_btn_wrap {
+    margin: 100px 0;
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid #071C30;
+}
+
+.viewMain .sub_pg_wrap .tab_btn_wrap .tab_btn {
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.viewMain .sub_pg_wrap .tab_btn_wrap .tab_btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+
+.viewMain .sub_pg_wrap .tab_btn_wrap .tab_btn a {
+    width: 100%;
+    text-align: center;
+}
+
+.viewMain .sub_pg_wrap .tab_btn_wrap .tab_btn.active {
+    background-color: #071C30;
+    color: white;
+}
+
+/*공지사항 테이블*/
+
+.viewMain .sub_pg_wrap .table-wrap {
+    width: 100% !important;
+    flex: 1 !important;
+    box-sizing: border-box;
+}
+
+.viewMain .table-wrap .table-header.table-body {
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-bottom: 2px solid #071C30;
+    pointer-events: none;
+}
+
+.viewMain .table-wrap .table-body {
+    width: 100%;
+    font-size: 1.5rem;
+    height: 50px;
+    color: black;
+    display: grid;
+    grid-template-columns: 60px 150px 1fr 150px 100px;
+    cursor: pointer;
+}
+
+.viewMain .table-wrap .table-body > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+
+    border-bottom: 1px solid #071C30;
+}
+
+.viewMain .table-wrap .table-body:first-child > div {
+    border-bottom: none;
+}
+
+.viewMain .table-wrap .table-body:hover {
+    background-color: rgba(7, 28, 48, 0.05);
+}
+
+.viewMain .table-wrap thead tr th {
+    font-weight: 600 !important;
+    color: #071C30;
+    border-bottom: 2px solid #071C30;
+    position: relative;
+}
+
+.viewMain .table-wrap thead tr th::after {
+    content: "";
+    height: 20px;
+    position: absolute;
+    border-right: 1px solid #071C30;
+    top: 50%;
+    right: 0;
+    transform:translate(-50%,-50%);
+}
+
+.viewMain .table-wrap thead tr th:last-child::after {
+    border-right: none;
+}
+
+.viewMain .table-wrap .table-body .title {
+    /*width: 680px;*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between !important;
+    overflow: hidden;
+}
+
+.viewMain .table-wrap .table-body .title a {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.ellipsis_1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.viewMain .table-wrap tbody tr .title .material-symbols-outlined {
+    vertical-align: middle;
+    width: 20px;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 5px;
+    /*width: 5%;*/
+
+    background-color: #0d133a;
+}
+
+.viewMain .tab_contents_wrap {
+    width: 100%;
+}
+
+
+/*view*/
+
+.viewMain .view-wrap .info-wrap .row > .bar {
+    width: 1px;
+    height: 14px;
+    border-right: 1px solid #dddddd;
+}
+
+
+.viewMain .guide-tab-wrap {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewMain .guide-tab-wrap table {
+    width: 100% !important;
+    border: 1px solid #dbdbdb;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.viewMain .guide-tab-wrap table th {
+    height: 50px;
+    border-collapse: collapse;
+    font-weight: 600;
+    border-right: 1px solid #dbdbdb;
+    background-color: #f3f2ff;
+}
+
+.viewMain .guide-tab-wrap table tr {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.viewMain .guide-tab-wrap table td {
+    border-right: 1px solid #dbdbdb;
+    padding: 10px 0;
+    white-space: break-spaces;
+}
+
+.viewMain .guide-tab-wrap .guide-table-wrap {
+    width: 100%;
+}
+
+
+.guide-tab-wrap img {}
+
+.viewMain .guide-tab-wrap img {
+    width: 100%;
+    margin-top: 1%;
+}
+
+.viewMain .guide-tab-wrap .text-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.7rem;
+    line-height: 1;
+    margin: 0 0 10px 13px;
+}
+
+.viewMain .guide-tab-wrap .text-box > div:nth-child(1){
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+/*performance-indicator 성과지표 시작*/
+
+.viewMain .tab_btn_wrap {
+    margin: -20px 0 30px 0;
+    width: 100%;
+    border-color: #dddddd;
+}
+
+.viewMain .tab_btn_wrap.p_i_btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.viewMain .tab_btn_wrap.p_i_btn .tab_btn {
+    color: #777777;
+    width: 50%;
+}
+
+.viewMain .tab_btn_wrap .tab_btn.active {
+    background-color: #777777;
+    border-color: #777777;
+}
+
+.viewMain .p_i_btn.tab_btn_wrap {
+    border: none;
+    column-gap: 10px;
+    margin: -10px 0 30px 0;
+}
+
+.viewMain .p_i_btn.tab_btn_wrap .tab_btn {
+    border: 1px solid #cecece !important;
+    border-radius: 25px;
+}
+.viewMain .p_i_btn.tab_btn_wrap .tab_btn.active {
+    background-color: #f3f2ff;
+    color: #000000;
+    font-weight: 500;
+}
+
+.viewMain .p_i_btn.tab_btn_wrap .tab_btn {
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.viewMain .p_i_btn.tab_btn_wrap .tab_btn.select_btn {
+    margin-left: 100px;
+    border-color: #dddddd !important;
+    background-color: #ffffff;
+}
+
+.viewMain .p_i_btn.tab_btn_wrap .tab_btn span.icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(50% , -50%);
+}
+
+.tg th::after {
+    display: none;
+}
+
+.viewMain .table-wrap .tg {
+    width: 100%;
+    border-color: #dbdbdb;
+    font-size:14px;
+    border-collapse:collapse;
+    border-spacing:0;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.viewMain .table-wrap .tg .table-graph-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.viewMain .table-wrap .tg .table-graph-wrap .table-graph {
+    width: 100%;
+    height: 10px;
+    border: 1px solid #2c3e50;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.viewMain .table-wrap .tg .table-graph-wrap .table-graph .graph {
+    background-color: #404e7a;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.viewMain .table-wrap .tg .table-graph-wrap .data {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 500
+}
+
+
+
+.viewMain .table-wrap .tg td {
+    border: 1px solid #dbdbdb;
+    padding: 4px;
+    font-size: 13px;
+}
+
+.viewMain .table-wrap .tg th {
+    border: 1px solid #dbdbdb;
+    padding:10px 5px;
+    height: 30px;
+}
+
+.viewMain .table-wrap .tg thead {
+    background-color: #f3f2ff;
+    white-space: nowrap;
+}
+
+.viewMain .table-wrap .tg thead .thead th:nth-child(1) {
+    width: 14%;
+    word-break: keep-all;
+}
+
+.viewMain .table-wrap .tg thead .thead th:nth-child(2) {
+    width: 12%;
+    word-break: keep-all;
+}
+
+.viewMain .table-wrap .tg thead .thead th:nth-child(3) {
+    width: 10%;
+    word-break: keep-all;
+}
+
+.viewMain .table-wrap .tg thead .thead th:nth-child(4) {
+    width: 7% !important;
+    word-break: keep-all;
+}
+
+.viewMain .table-wrap .tg thead .thead th:nth-child(5) {
+    width: 7%;
+    word-break: keep-all;
+}
+
+.viewMain .table-wrap .tg thead .thead th:nth-child(6) {
+    /*background-color: #2c3e50;*/
+    width: 7%;
+    word-break: keep-all;
+}
+.viewMain .table-wrap .tg thead .thead th:nth-child(7) {
+    /*background-color: #2c3e50;*/
+    width: 7% !important;
+    word-break: keep-all;
+}
+.viewMain .table-wrap .tg thead .thead th:nth-child(8) {
+    width: 3% !important;
+    word-break: keep-all;
+}
+
+.viewMain .table-wrap .tg thead .thead th:nth-child(9) {
+    width: 28% !important;
+    word-break: keep-all;
+}
+.viewMain .table-wrap .tg thead .thead th:nth-child(10) {
+    width: 5% !important;
+}
+
+.viewMain .table-wrap .tg tbody .result-bg {
+    background-color: rgba(243, 242, 255, 0.9);
+}
+
+
+.viewMain .table-wrap .tg tbody {
+    line-height: 1;
+    white-space: break-spaces;
+    word-break: keep-all;
+
+}
+
+.viewMain .table-wrap .tg .category th {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.viewMain .table-wrap .tg tr {
+    height: fit-content !important;
+}
+
+.viewMain .table-wrap .tg td .file_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.viewMain .table-wrap .tg td .file_wrap .icon_xls {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-image: url("@/assets/user/img/icon_xls.png");
+    background-repeat: no-repeat;
+}
+
+.viewMain .table-wrap .tg td .file_wrap .icon_pdf {
+    width: 48px;
+    height: 48px;
+    background-image: url("@/assets/user/img/icon_pdf.png");
+    background-repeat: no-repeat;
+
+}
+
+/*performance-indicator 성과지표 종료*/
+
+
+
+
+
+@media (max-width: 1024px) {
+    .viewMain .sub_pg_wrap {
+        padding: 0 20px;
+    }
+}
+
+
+
+@media (max-width: 760px) {
+    .viewMain .table-wrap .table-body {
+        grid-template-columns: 60px 130px 1fr 130px 100px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    /*.viewMain .table-wrap .table-header.table-body > div:last-child {*/
+    /*    display: none;*/
+    /*}*/
+    /*.viewMain .table-wrap .table-body > div:last-child {*/
+    /*    display: none;*/
+    /*}*/
+
+    .viewMain .table-wrap .table-body {
+        grid-template-columns: 50px 100px 1fr 100px;
+    }
+
+    .viewMain .table-wrap .table-body .date {
+        display: none;
+    }
+}
+
+
+.login-page-wrap {
+    #header {
+        background-color: #071C30 !important;
+    }
+}

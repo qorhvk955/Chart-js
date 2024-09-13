@@ -1,0 +1,22 @@
+@import './base.scss';
+@import './font.scss';
+
+a {
+    color: #fff;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    min-width: 360px;
+    overflow-x: hidden;
+    @media ($isTablet) {
+    }
+    @media ($isMobile) {
+    }
+}
+
+body.fixed {
+    overflow: hidden;
+    position: fixed;
+}
