@@ -7,7 +7,7 @@
 
 <script>
 // import MainHeader from "@/components/main/MainHeader.vue";
-import PerformanceIndicator from "@/components/main/PerformanceIndicator.vue";
+import PerformanceIndicator from "../components/main/PerformanceIndicator.vue";
 
 export default {
   name: "HomePage",

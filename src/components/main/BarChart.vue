@@ -1,5 +1,6 @@
 <template>
   <canvas ref="coreChart"></canvas>
+  <button @click="dougnut">버튼</button>
 </template>
 
 <script>
@@ -51,6 +52,7 @@ export default {
 
     renderChart(data) {
       const ctx = this.$refs.coreChart.getContext("2d");
+
       const labels = [...new Set(data.map((item) => item.indicatorName))];
       const totalValues = {};
 
@@ -100,12 +102,8 @@ export default {
           totalValues[item].totalValue / totalValues[item].univ.length;
         obj.data = dataArr;
 
-        console.log();
-
         datasets.push(obj);
       });
-
-      console.log(datasets);
 
       new Chart(ctx, {
         type: "bar",
@@ -116,6 +114,26 @@ export default {
         options: {
           indexAxis: "y",
           responsive: true,
+
+          onHover: (event, chartElement) => {
+            if (chartElement.length > 0) {
+              const datasetIndex = chartElement[0].datasetIndex;
+              //const index = chartElement[0].index;
+
+              console.log(totalValues);
+
+              const data = datasets[datasetIndex];
+
+              const hoveredData = data;
+
+              totalValues[hoveredData.label].label = hoveredData.label;
+
+              // hoveredData.label = hoveredData.label;
+
+              this.$emit("hover-data", totalValues[hoveredData.label]);
+            }
+          },
+
           plugins: {
             tooltip: {
               padding: 20,
@@ -175,18 +193,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.chart-wrap {
-  width: 100%;
-  display: flex;
-
-  &__left {
-    flex: 1;
-    margin: 10rem;
-  }
-
-  &__right {
-    flex: 1;
-  }
-}
-</style>
+<style lang="scss"></style>
